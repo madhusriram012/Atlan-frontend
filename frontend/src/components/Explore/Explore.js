@@ -12,7 +12,7 @@ import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Pagination from "../Pagination";
+import Pagination from "../Pagination/Pagination";
 
 
 const Explore = () => {
@@ -110,7 +110,7 @@ const Explore = () => {
           onMouseLeave={onDragEnd}
           onMouseMove={onDragMove}
         >
-          <button  style={{ marginRight: "10px" ,left:"0"}} onClick={scrollLeft}>
+          <button  style={{ marginRight: "10px" ,left:"0",color:"black"}} onClick={scrollLeft}>
             &lt;
           </button>
           <div className="scroll-view" ref={scrollViewRef}>
@@ -120,7 +120,7 @@ const Explore = () => {
                 .map((model) => <ExploreModels key={model.id} model={model} />)}
           </div>
           <button
-            style={{ marginRight: "35px", right: "0" }}
+            style={{ marginRight: "5px", right: "0" ,color:"black"}}
             onClick={scrollRight}
           >
             &gt;

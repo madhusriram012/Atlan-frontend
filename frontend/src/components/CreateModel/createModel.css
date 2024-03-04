@@ -6,28 +6,38 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.topcreate{
+.topcreate {
   display: flex;
 }
-
-
 
 .card-container-create {
   display: flex;
   justify-content: space-around;
   gap: 20px;
-
 }
 
-
-
 .card-create {
-  width: 45%; 
+  width: 45%;
   padding: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   background-color: white;
   flex-basis: 48%;
   padding: 20px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-create2{
+  width: 45%;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  flex-basis: 48%;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
 }
@@ -43,18 +53,22 @@
 .image-upload-container-create {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin: auto ;
   align-items: center;
-  height: 300px;
-  width: 300px;
-  margin-left: 20%;
+  height: 200px;
+  width: 200px;
   border-radius: 20px;
   cursor: pointer;
 }
 
-.add-image-modal{
+.image-upload-container-create:hover {
+  cursor: pointer;
+}
+
+.add-image-modal {
   width: 200px;
   height: 200px;
+  cursor: pointer;
 }
 
 .upload-icon-create {
@@ -79,7 +93,7 @@
   justify-content: space-between;
   gap: 20px;
 }
-.add-usecase-btn{
+.add-usecase-btn {
   width: 100%;
   padding: 10px;
   border: none;
@@ -90,11 +104,10 @@
   cursor: pointer;
 }
 
-.add-usecase-btn:hover{
+.add-usecase-btn:hover {
   background: #0056b3;
   color: white;
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -105,7 +118,7 @@ input[type="password"] {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
-textarea{
+textarea {
   width: 100%;
   padding: 10px;
   margin: 5px 0;
@@ -128,31 +141,34 @@ textarea{
   background-color: #0056b3;
   color: white;
 }
-.button-create-block{
+.button-create-block {
   margin: 20px auto;
   max-width: 30%;
   min-width: 200px;
 }
 
-@media(min-width:960px){
+@media (min-width: 960px) {
   .uploaded-image-create {
     margin-top: 20px;
   }
 }
 
-@media(max-width:700px){
-  .card-container-create{
-      display: block;
+@media (max-width: 700px) {
+  .card-container-create {
+    display: block;
   }
-  .card-create{
-      width: 100%;
-      margin-top: 20px;
+  .card-create {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .card-create2 {
+    width: 100%;
+    margin-top: 20px;
   }
   .uploaded-image-create {
-      max-height: 200px;
-    }
-    .image-upload-container-create{
-      margin-top: 10px;
-    }
+    max-height: 200px;
+  }
+  .image-upload-container-create {
+    margin-top: 10px;
+  }
 }
-

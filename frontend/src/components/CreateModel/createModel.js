@@ -211,11 +211,10 @@ const CreateModelCard = () => {
             </button>
           </div>
         </div>
-        <div className="card-create">
+        <div className="card-create2">
           <h2 className="card-heading-create">Upload Image</h2>
           <div className="image-upload-container-create">
             <input
-              //   key={inputKey}
               type="file"
               id="fileInput"
               onChange={handleImageChange}

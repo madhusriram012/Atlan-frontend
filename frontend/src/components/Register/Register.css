@@ -1,95 +1,90 @@
 .registration-container {
-    /* max-width: 650px; */
-    margin: 100px 300px;
-    margin-top: 120px;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .social{
-    
-    display: flex;
-    font-size: 25px;
-    align-items: flex-start;
-    width: 50%;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    margin-left: 28%;
-  }
+  margin: 100px 300px;
+  margin-top: 120px;
+  font-family: "Arial", sans-serif;
+}
 
-  .registration-form {
-    background-color: #1e1e2a;
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
-    padding-bottom: 40px;
-    justify-content: space-between; 
-  }
-  .form-register-block{
-    width: 45%;
-    margin-top: 80px;
-  }
-  .registration-form h1 {
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
-   
-  }
-  
-  .form-group {
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .register-button {
-    width: 50%;
-    padding: 10px;
-    background-color:#97b9fc ;
-    border: none;
-    border-radius: 5px;
-    color: black;
-    cursor: pointer;
-    font-weight: bold;
-    left: 0px;
-    margin-left: 30px;
-  }
-  
-  .register-button:hover {
-    background-color: #007bff;
-    font-weight: bold;
-    color: white;
-  }
-  
-@media (max-width: 850px){
+.social {
+  display: flex;
+  font-size: 25px;
+  align-items: flex-start;
+  width: 50%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  margin-left: 28%;
+}
+
+.registration-form {
+  background-color: #1e1e2a;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+.form-register-block {
+  width: 45%;
+  margin-top: 80px;
+}
+.registration-form h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-button {
+  width: 50%;
+  padding: 10px;
+  background-color: #97b9fc;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  left: 0px;
+  margin-left: 30px;
+}
+
+.register-button:hover {
+  background-color: #007bff;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 850px) {
   .registration-container {
     padding-left: 20px;
     padding-right: 20px;
   }
- 
 }
 @media (max-width: 768px) {
   .registration-form {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .form-register-block{
-      width: 100%;
-      max-width: none;
+  .form-register-block {
+    width: 100%;
+    max-width: none;
   }
-  
 }
 
-.returnh{
+.returnh {
   text-align: start;
   font-weight: bold;
   height: 100px;
@@ -99,13 +94,13 @@
 }
 
 .image-container-register {
-  height: 430px;
-  width: 580px;
+  height: 400px;
+  width: 400px;
 }
 
-.img-reg{
+.img-reg {
   height: 300px;
   width: 300px;
-  margin-top: 40px;
+  margin-top: 30px;
   border-radius: 10px;
 }

@@ -90,7 +90,7 @@ const ModelDetail = () => {
 
   const tryModel = async () => {
     if (textValue === "" && selectedImage === null) {
-      alert("Please enter the input data");
+      alert("No value is entered!!");
     }
     setShowModal(true);
     try {
@@ -115,9 +115,7 @@ const ModelDetail = () => {
   const tryShare = async () => {
     alert("Sharing Model link feature will come soon");
   };
-  const tryRate = async () => {
-    alert("Rating feature will come soon");
-  };
+  
   return (
     <>
       <Helmet>
@@ -166,7 +164,7 @@ const ModelDetail = () => {
               </Modal>
             </div>
             <div className="share">
-              <Button onClick={tryRate} className="btn-share">
+              <Button onClick={tryShare} className="btn-share">
                 <FaShareNodes
                   style={{
                     fontSize: "1.5em",

@@ -37,8 +37,6 @@ const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              {/* <NavLink to="/" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</NavLink>
-              <NavLink to="/explore" className={activeLink === 'explore' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('explore')}>Explore</NavLink> */}
               <NavLink to="/signin" className={activeLink === 'signin' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('signin')}>Login</NavLink>
               <NavLink to="/register" className={activeLink === 'register' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('register')}>Register</NavLink>
             </Nav>

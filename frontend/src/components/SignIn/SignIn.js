@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SignIn.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -6,24 +6,8 @@ import LoginImage from "../../assets/img/lock.jpg";
 import { FaGoogle, FaFacebook, FaApple } from "react-icons/fa";
 
 const SignPage = () => {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
-  };
+  const handleChange = (e) => {};
+  const handleSubmit = (e) => {};
 
   return (
     <div className="signIn-container">
@@ -56,7 +40,6 @@ const SignPage = () => {
               className="signinput"
               type="email"
               name="email"
-              value={formData.password}
               onChange={handleChange}
               placeholder="Email"
             />
@@ -66,7 +49,6 @@ const SignPage = () => {
               className="signinput"
               type="password"
               name="password"
-              value={formData.confirmPassword}
               onChange={handleChange}
               placeholder="Password"
             />
@@ -79,7 +61,7 @@ const SignPage = () => {
           <button className="login-button" type="submit">
             Sign In
           </button>
-          <div className="return">
+          <div className="returnlog">
             <a href="/">Return to homepage</a>
           </div>
         </form>

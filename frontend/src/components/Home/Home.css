@@ -5,21 +5,28 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  height: max-content;
 }
 
 .banner .tagline {
   font-weight: bold;
   letter-spacing: 0.8px;
-  padding: 10px 10px;
+  padding: 8px 8px;
   background: #97b9fc;
   color: black;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
   font-size: 15px;
-  /* margin-bottom: 16px; */
   margin-top: 0;
-  margin-left: 200px;
+  margin-left: 25%;
   display: inline-block;
+}
+
+.imagehome{
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  margin-left: 130px;
 }
 
 .banner h2 {
@@ -65,9 +72,9 @@
 .banner img {
   width: 100%;
   max-width: 500px;
-  margin-top: 0;
+  margin-left: 5%;
 }
 .left{
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
