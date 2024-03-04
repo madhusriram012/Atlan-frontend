@@ -53,6 +53,7 @@ const SignPage = () => {
           </div>
           <div className="form-group">
             <input
+              className="signinput"
               type="email"
               name="email"
               value={formData.password}
@@ -62,6 +63,7 @@ const SignPage = () => {
           </div>
           <div className="form-group">
             <input
+              className="signinput"
               type="password"
               name="password"
               value={formData.confirmPassword}
@@ -70,9 +72,9 @@ const SignPage = () => {
             />
           </div>
           <div className="socialmedia">
-            <FaGoogle className="socialicon" style={{color:"white"}}/>
-            <FaFacebook className="socialicon" style={{color:"white"}}/>
-            <FaApple className="socialicon" style={{color:"white"}}/>
+            <FaGoogle className="socialicon" style={{ color: "white" }} />
+            <FaFacebook className="socialicon" style={{ color: "white" }} />
+            <FaApple className="socialicon" style={{ color: "white" }} />
           </div>
           <button className="login-button" type="submit">
             Sign In
