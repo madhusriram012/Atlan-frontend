@@ -138,10 +138,10 @@ ul li {
 }
 
 .code-frame {
-  background-color: #202123;
+  background-color: #272a36;
   color: grey;
-  padding: 15px;
-  border-radius: 5px;
+  /* padding: 10px; */
+  border-radius: 8px;
 }
 
 .back {

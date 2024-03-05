@@ -11,6 +11,8 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { FaShareNodes } from "react-icons/fa6";
 import { Modal } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const ModelDetail = () => {
   const location = useLocation();
@@ -116,7 +118,7 @@ const ModelDetail = () => {
   const tryShare = async () => {
     alert("Sharing Model link feature will come soon");
   };
-  
+
   return (
     <>
       <Helmet>
@@ -157,7 +159,10 @@ const ModelDetail = () => {
                         ))}
                     </div>
                   </div>
-                  <input placeholder="Provide your valuable feedback" className="textarea rating-input" />
+                  <input
+                    placeholder="Provide your valuable feedback"
+                    className="textarea rating-input"
+                  />
                 </Modal.Body>
                 <Modal.Footer>
                   <Button onClick={() => setOpenModal(false)}>Submit</Button>
@@ -213,7 +218,12 @@ const ModelDetail = () => {
                   <h4>Demo Code</h4>
                   <div className="code-frame">
                     <pre>
-                      <code>{model.code_snippet}</code>
+                      <code>
+                       
+                        <SyntaxHighlighter language="javascript" style={dracula}>
+                          {model.code_snippet}
+                        </SyntaxHighlighter>
+                      </code>
                     </pre>
                   </div>
                 </div>
