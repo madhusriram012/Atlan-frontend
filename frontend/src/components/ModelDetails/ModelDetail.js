@@ -78,7 +78,7 @@ const ModelDetail = () => {
   const GPT_Text = async (data) => {
     try {
       console.log(valueData);
-      const response = await axios.post("http://localhost:3001/api/model", {
+      const response = await axios.post(`${process.env.server}/api/model`, {
         data,
         valueData,
       });

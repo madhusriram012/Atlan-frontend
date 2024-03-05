@@ -109,7 +109,7 @@ const CreateModelCard = () => {
       setShowModal(false);
       return alert(`Please fill out the testcases field.`);
     }
-    const serverEndpoint = "http://localhost:3001/api/update-model";
+    const serverEndpoint = `${process.env.server}/api/update-model`;
     try {
       const response = await fetch(serverEndpoint, {
         method: "POST",
