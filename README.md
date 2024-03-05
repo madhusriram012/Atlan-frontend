@@ -34,7 +34,7 @@ The Major plugins or packages installed are Cloudinary,Axios,Bootstrap,React-ico
 
 ### Demo
 
-[DEMO_FRONTEND_ATLAN](https://drive.google.com/file/d/16U8vS3gwn7VB3tA4CGdb4qpdI_hjLjQv/view?usp=sharing)
+([DEMO_FRONTEND_ATLAN](https://drive.google.com/drive/folders/1h3L5fi3rcJwOdUm4PZYu1AIuVPmdN49t?usp=drive_link))
 
 
 <img width="1220" alt="image" src="https://github.com/madhusriram012/atlan_sql_front/assets/75003175/b85176b5-53f9-44b0-a7f2-570a0cd90d73">
