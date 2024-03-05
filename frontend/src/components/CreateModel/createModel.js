@@ -143,7 +143,7 @@ const CreateModelCard = () => {
       <div className="topcreate">
       
           <a href="/explore">
-            <IoMdArrowRoundBack style={{ fontSize: '3em' ,color: "#97b9fc"}} />
+            <IoMdArrowRoundBack style={{ fontSize: '3em' ,color: "#97b9fc"}}/>
           </a>
         
         <h1 style={{ marginBottom: "30px",marginLeft:"25%", color: "white" }}>

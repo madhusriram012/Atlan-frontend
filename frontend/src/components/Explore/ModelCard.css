@@ -7,6 +7,9 @@
   text-align: center;
   margin-top: 5.5rem;
   color: white;
+  height: 50px;
+  width: max-content;
+  margin-left: 40%;
 }
 
 .scroll-view-container {
