@@ -7,7 +7,7 @@ Given the recent surge in interest in AI models and LLMs, you have been tasked w
 ### Step 1: Clone the repository
 
 ```bash
- git clone https://github.com/madhusriram012/atlan_sql_front.git
+ git clone https://github.com/madhusriram012/Atlan-frontend.git
 ```
 ### Step 2: Install dependencies
 
