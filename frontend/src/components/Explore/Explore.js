@@ -14,7 +14,6 @@ import { faSearchengin } from "@fortawesome/free-brands-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Pagination from "../Pagination/Pagination";
 
-
 const Explore = () => {
   const scrollViewRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -27,12 +26,11 @@ const Explore = () => {
 
   const { data, isLoading, error } = useContext(GitHubDataContext);
 
-  const [currentPage,setCurrentPage]=useState(1);
-  const [postsPerPage,setPostsPerPage]=useState(10);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
 
-
-  const lastPostIndex=currentPage*postsPerPage;
-  const firstPostIndex=lastPostIndex-postsPerPage;
+  const lastPostIndex = currentPage * postsPerPage;
+  const firstPostIndex = lastPostIndex - postsPerPage;
 
   console.log(data);
   useEffect(() => {
@@ -93,7 +91,10 @@ const Explore = () => {
   if (error)
     return <Error message={"Error while fetching data, Please try again."} />;
 
-    const currentPosts=filteredAndSortedData.slice(firstPostIndex,lastPostIndex);
+  const currentPosts = filteredAndSortedData.slice(
+    firstPostIndex,
+    lastPostIndex
+  );
 
   return (
     <>
@@ -102,7 +103,10 @@ const Explore = () => {
         <meta name="description" content="Explore Page " />
       </Helmet>
       <div className="explore_top">
-        <h2 className="tag-text">Most Loved <span style={{color:"grey",fontSize:"15px"}}>by Developers</span></h2>
+        <h2 className="tag-text">
+          Most Loved{" "}
+          <span style={{ color: "grey", fontSize: "15px" }}>by Developers</span>
+        </h2>
         <div
           className="scroll-view-container"
           onMouseDown={onDragStart}
@@ -110,7 +114,10 @@ const Explore = () => {
           onMouseLeave={onDragEnd}
           onMouseMove={onDragMove}
         >
-          <button  style={{ marginRight: "10px" ,left:"0",color:"black"}} onClick={scrollLeft}>
+          <button
+            style={{ marginRight: "10px", left: "0", color: "black" }}
+            onClick={scrollLeft}
+          >
             &lt;
           </button>
           <div className="scroll-view" ref={scrollViewRef}>
@@ -120,7 +127,7 @@ const Explore = () => {
                 .map((model) => <ExploreModels key={model.id} model={model} />)}
           </div>
           <button
-            style={{ marginRight: "5px", right: "0" ,color:"black"}}
+            style={{ marginRight: "5px", right: "0", color: "black" }}
             onClick={scrollRight}
           >
             &gt;
@@ -150,7 +157,7 @@ const Explore = () => {
           </div>
           <div className="sort-by-dropdown">
             <label
-              style={{ color: "white", marginRight: "10px"}}
+              style={{ color: "white", marginRight: "10px" }}
               htmlFor="sortby"
             >
               Sort by:
@@ -158,7 +165,7 @@ const Explore = () => {
             <select
               id="sortby"
               name="sortby"
-              style={{width:"140px"}}
+              style={{ width: "140px" }}
               onChange={(e) => setSortCriteria(e.target.value)}
             >
               <option value="category">Category</option>
@@ -173,9 +180,13 @@ const Explore = () => {
               currentPosts.map((model) => (
                 <AiModelCard key={model.id} model={model} />
               ))}
-              <Pagination postsPerPage={postsPerPage} totalPosts={filteredAndSortedData.length} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
+            <Pagination
+              postsPerPage={postsPerPage}
+              totalPosts={filteredAndSortedData.length}
+              setCurrentPage={setCurrentPage}
+              currentPage={currentPage}
+            />
           </div>
-          
         </div>
       </div>
 

@@ -14,7 +14,7 @@ export const GitHubDataProvider = ({ children }) => {
     try {
       const response = await fetch('https://raw.githubusercontent.com/madhusriram012/Atlan-frontend/main/ModelsData.json');
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Network Error!!');
       }
       const result = await response.json();
       setData(result);

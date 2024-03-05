@@ -144,8 +144,7 @@ const CreateModelCard = () => {
     <div className="outer-card-create">
       {showModal && <Topup data="creating" />}
       <div className="topcreate">
-      
-          <div onClick={() => navigate(-1)}>
+          <div onClick={() => navigate(-1)} className="back">
             <IoMdArrowRoundBack style={{ fontSize: '3em' ,color: "#97b9fc"}}/>
           </div>
         
