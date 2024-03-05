@@ -111,5 +111,6 @@ nav.navbar {
 }
 
 .name{
+  margin-top: 5px;
   color: white;
 }
