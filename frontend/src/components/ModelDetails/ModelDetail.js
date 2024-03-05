@@ -157,7 +157,7 @@ const ModelDetail = () => {
                         ))}
                     </div>
                   </div>
-                  <input placeholder="Provide your valuable feedback" className="textarea" />
+                  <input placeholder="Provide your valuable feedback" className="textarea rating-input" />
                 </Modal.Body>
                 <Modal.Footer>
                   <Button onClick={() => setOpenModal(false)}>Submit</Button>
