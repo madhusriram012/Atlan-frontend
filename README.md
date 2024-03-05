@@ -68,12 +68,12 @@ With the gathered information, few important topics were picked and features wer
 1. User Accounts and Personalization: Users may want the ability to create accounts to personalize their experience, Additionally to fasten the process they can instantly sigin by google or facebook or apple signin.
 2. Dynamic Model Views (visualization): The list of mdoels will be fetched without loading all the data. The models are loaded in pagination view. Keeping the application lightweight, and swift.
 3. A space for diving into specific models (Code execution and result visualization): Every model should also have a dedicated page that allow end users to dive deeper into the given model. If you want to sprinkle in additional details, go right ahead, but a very minimal page would ideally contain: a description of the model and the provider, a snippet of code showing an example of using it, potential use cases.
-4. Search Tables (Ease of viewing particular model): The user can search for the table names. In real production environment, there will be lot of models which needs to be searched. This feature saves time by identifying required table faster.
-5. History  (Query History): History tab shows the list of queries which was used. 
-6. Dedicated account (Security and access control): The user will have dedicated account which allows to authenticate and authorise user. Some users can access certain table and some can't. This account helps to manage these restrictions.
-7. Sharing (Collaboration and sharing): Users can share the models to the users in the organisation or the team. 
-8. Model Comparison Tools: For users looking to make informed decisions, a tool that allows them to compare multiple models side by side can be a valuable feature.
-9. Rating and feedback from users: From this people can give rating to particular model and can comment on what needs to be improved.
+4. Search Models (Ease of viewing particular model): The user can search for the Model names. In real production environment, there will be lot of models which needs to be searched. This feature saves time by identifying required Model faster. 
+5. Dedicated account (Security and access control): The user will have dedicated account which allows to authenticate and authorise user. Some users can access certain Model and some can't. This account helps to manage these restrictions.
+6. Sharing (Collaboration and sharing): Users can share the models to the users in the organisation or the team. 
+7. Model Comparison Tools: For users looking to make informed decisions, a tool that allows them to compare multiple models side by side can be a valuable feature.
+8. Rating and feedback from users: From this people can give rating to particular model and can comment on what needs to be improved.
+9. Publishers can publish their model in this page and contribute their valuable findings in this website.
     
 
 ### Optimizations
