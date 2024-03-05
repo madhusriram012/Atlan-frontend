@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./App.css";
 import NavBar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Explore from "./components/Explore/Explore";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ModelDetail from "./components/ModelDetails/ModelDetail";
@@ -24,7 +24,6 @@ const App = () => {
       <div className="page-container">
         <NavBar />
         <div className="content-wrap">
-          <BrowserRouter>
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/explore" element={<Explore />} />
@@ -34,7 +33,6 @@ const App = () => {
               <Route path="/create-model" element={<CreateModelCard />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
-          </BrowserRouter>
         </div>
       </div>
     </div>
