@@ -7,6 +7,7 @@ import Topup from "./../TopupModal/Topup";
 import Loading from "./../../utils/Loading";
 import Error from "./../../utils/Error";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 const CreateModelCard = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -28,6 +29,8 @@ const CreateModelCard = () => {
     imageUrl:
       "https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg",
   });
+  const navigate = useNavigate();
+
   useEffect(() => {
     if (needRerender) {
       setNeedRerender(false);
@@ -142,9 +145,9 @@ const CreateModelCard = () => {
       {showModal && <Topup data="creating" />}
       <div className="topcreate">
       
-          <a href="/explore">
+          <div onClick={() => navigate(-1)}>
             <IoMdArrowRoundBack style={{ fontSize: '3em' ,color: "#97b9fc"}}/>
-          </a>
+          </div>
         
         <h1 style={{ marginBottom: "30px",marginLeft:"25%", color: "white" }}>
           Create your own AI model

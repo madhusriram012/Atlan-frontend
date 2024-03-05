@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./ModelDetail.css";
 import Topup from ".././TopupModal/Topup";
 import Button from "react-bootstrap/Button";
@@ -29,6 +29,7 @@ const ModelDetail = () => {
   const handleClick = (index) => {
     setRating(index + 1);
   };
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (needRerender) {
@@ -125,11 +126,11 @@ const ModelDetail = () => {
       <div className="card model-container">
         <div className="top">
           <div className="back">
-            <a href="/explore">
+            <div onClick={() => navigate(-1)}>
               <IoMdArrowRoundBack
                 style={{ fontSize: "4em", color: "#007bff" }}
               />
-            </a>
+            </div>
           </div>
           <div className="titletop">
             <h1 className="model-title-detail">
