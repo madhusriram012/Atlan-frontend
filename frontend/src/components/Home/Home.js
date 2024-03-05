@@ -38,7 +38,6 @@ const Home = () => {
                 <img
                   src={HomeImage}
                   alt="Header Img"
-                  loading="lazy"
                   style={{
                     maxWidth: "200px",
                     height: "200px",
