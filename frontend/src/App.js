@@ -12,12 +12,12 @@ import CreateModelCard from "./components/CreateModel/createModel";
 
 import NotFoundPage from "./components/NotFound/NotFoundPage";
 import { NetworkContext } from "./components/context/NetworkContext";
-import Internetconnection from "./components/InternetConnection/Internetconnection";
+import NoInternet from "./components/NoInternetError/NoInternet";
 
 const App = () => {
   const isOnline = useContext(NetworkContext);
   if (!isOnline) {
-    return <Internetconnection />;
+    return <NoInternet />;
   }
   return (
     <div className="root">
