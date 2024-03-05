@@ -50,6 +50,7 @@ The Major plugins or packages installed are Cloudinary,Axios,Bootstrap,React-ico
 Brainstorming started with gathering necessary information required for the data analystics team to have smooth expereince by using the tool.
 With the gathered information, few important topics were picked and features were built based on those needs. The following are the topics the features were focussed on,
 * Discoverability of Models
+* Pagination
 * Information Accessibility
 * Featured Models
 * Detailed Model Pages
